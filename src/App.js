@@ -9,9 +9,10 @@ import WhatIDo from './components/whatIDo'
 import PortfolioCard from './components/portfolioCard'
 import PortfolioText from './components/portfolioText';
 import avatar from './imgs/avatar.jpg';
+import PortfolioProjects from './components/portfolioProjects'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const swtichbgMode = () =>{
     console.log(darkMode)
     setDarkMode(!darkMode)
@@ -36,12 +37,13 @@ function App() {
         </section>
         <section>
           <PortfolioText />
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+          {/* <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <PortfolioCard image={avatar} />
             <PortfolioCard image={avatar} />
             <PortfolioCard image={avatar} />
             <PortfolioCard image={avatar} />
-          </div>
+          </div> */}
+          <PortfolioProjects />
         </section>
       </div>
     </div>

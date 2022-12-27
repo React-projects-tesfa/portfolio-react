@@ -2,9 +2,9 @@ import React from 'react'
 import avatar from '../imgs/avatar-nobg.png'
 export default function Card({image, title,description,tools}) {
   return (
-    <div className=' flex text-center flex-col items-center shadow-lg pd-10 rounded-xl my-10  dark:bg-white'>
+    <div className=' flex text-center flex-col items-center shadow-lg pd-10 rounded-xl my-10 hover:-translate-y-1 hover:scale-110 duration-300  dark:bg-white dark:shadow-white'>
         <img className='pt-5' width={100} height={100} src={avatar} alt="what i do card logos" />
-        <h3 className='text-lg font-medium pt-8 pb-2'>{title}</h3>
+        <h3 className='font-medium pt-8 pb-2 text-2xl'>{title}</h3>
         <p className='py-2'>
         {description}
         </p>
