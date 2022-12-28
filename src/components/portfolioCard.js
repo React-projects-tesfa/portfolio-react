@@ -1,25 +1,22 @@
 import React from 'react'
+import {AiFillGithub, AiFillPlayCircle, AiFillVideoCamera} from 'react-icons/ai'
 import avatar from '../imgs/avatar-nobg.png'
-export default function PortfolioCard({image}) {
+export default function PortfolioCard({name, description, githubLink, liveDemoAvailable, demoLink, image}) {
   return (
-    <div className='basis-1/3 flex-1 bg-slate-600 rounded-lg '>
-        <div className="relative bg-black">
-            <img className='object-cover rounded-lg' width={'100%'} height={'100%'} layout='responsive' src={avatar} alt="portofolio project images" />
-        <ul>
-            <li className='absolute bottom-14 left-16 h-8 w-44 bg-gradient-to-r from-cyan-500 to-teal-800 text-center rounded md:bottom-20 md:left-36 md:h-16 md:w-80 md:pt-2 hover:to-white'>
-                <a className=' text-white rounded md:text-3xl' href='#'>Live Demo</a>
-            </li>
-            <li className='absolute bottom-3 left-16 h-8 w-44 bg-gradient-to-r from-cyan-500 to-teal-800 text-center rounded md:bottom-2 md:left-36 md:h-16 md:w-80 md:pt-2'>
-                <a className=' text-white rounded md:text-3xl' href='#'>Source code</a>
-            </li>
-        </ul>
-        
-        </div>
-        <div className='flex text-center flex-col items-center'>
-            <h3 className=''>Project name</h3>
-            <h5 className=''>Project description</h5>
-            <p>Used tools: </p>
-        </div>
+    <div className="group relative cursor-pointer items-center justify-center overflow-hidden rounded-md transition-shadow hover:shadow-xl hover:shadow-dark/30 overflow-x-visible">
+      <div className="h-96 w-72">
+        <img className=" h-full w-full object-cover transition-transform duration-500 group-hover:rotate-1 group-hover:scale-125 overflow-visible" src={image} alt="" />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+      <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+        <h1 className="font-dmserif text-3xl font-bold text-white">{name}</h1>
+        <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">{description}</p>
+        <a href={githubLink} className="rounded-full bg-neutral-700 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white"><AiFillGithub/></a>
+        {liveDemoAvailable ? 
+        <a href={demoLink} className="rounded-full bg-neutral-700 py-2 mt-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white "><AiFillPlayCircle/></a>:
+        <a href={demoLink} className="rounded-full bg-neutral-700 py-2 mt-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white "><AiFillVideoCamera/></a>
+        }
+      </div>
     </div>
   )
 }

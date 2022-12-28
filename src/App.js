@@ -6,10 +6,12 @@ import Card from './components/card'
 import Avatar from './components/avatar'
 import SocialMediaIcons from './components/socialMediaIcons'
 import WhatIDo from './components/whatIDo'
-import PortfolioCard from './components/portfolioCard'
 import PortfolioText from './components/portfolioText';
 import avatar from './imgs/avatar.jpg';
 import PortfolioProjects from './components/portfolioProjects'
+import hashtag from '../src/imgs/whatIdoIcons/hashtag.png'
+import papers from '../src/imgs/whatIdoIcons/papers.png'
+import star from '../src/imgs/whatIdoIcons/star.png'
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -30,21 +32,20 @@ function App() {
         <section>
           <WhatIDo />
           <div className=' lg:flex gap-10'>
-            <Card image={avatar} title={"Front-end"}  tools={["Javascript", "React JS", "Next js"]} description={"Creating elegant designs suited for your design theory."}/>
-            <Card image={avatar} title={"Back-end "}  tools={["Django Rest Framework", "Illustrator", "figma"]} description={"Creating elegant designs suited for your design theory."}/>
-            <Card image={avatar} title={"Android mobile development"}  tools={["Jetpack Compose", "Xml"]} description={"Creating elegant designs suited for your design theory."}/>
+            <Card image={hashtag} title={"Front-end"}  tools={["Javascript", "React JS", "Next js"]} description={"Creating elegant designs suited for your design theory."}/>
+            <Card image={papers} title={"Back-end "}  tools={["Django Rest Framework", "Illustrator", "figma"]} description={"Creating elegant designs suited for your design theory."}/>
+            <Card image={star} title={"Android mobile development"}  tools={["Jetpack Compose", "Xml"]} description={"Creating elegant designs suited for your design theory."}/>
           </div>
         </section>
         <section>
           <PortfolioText />
-          {/* <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <PortfolioCard image={avatar} />
-            <PortfolioCard image={avatar} />
-            <PortfolioCard image={avatar} />
-            <PortfolioCard image={avatar} />
-          </div> */}
-          <PortfolioProjects />
+          <PortfolioProjects/>
         </section>
+        <footer>
+        <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6" />
+        <span className="block text-sm text-white ml-3 sm:text-center ">© 2022 <a href="https://tesfatsionshiferaw.netlify.app/" className="hover:text-wh">Tesfatsion Shiferaw™</a>. All Rights Reserved.
+        </span>
+        </footer>
       </div>
     </div>
   );
