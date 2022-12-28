@@ -10,8 +10,8 @@ export default function Card({image, title,description,tools}) {
         </p>
         
         <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-        {tools.map(toolItem => {
-            return  <p className=' text-gray-800 py-1'>{toolItem}</p>
+        {tools.map((toolItem, index )=> {
+            return  <p key={index} className=' text-gray-800 py-1'>{toolItem}</p>
         })}
         
     </div>

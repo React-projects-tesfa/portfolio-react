@@ -6,7 +6,6 @@ import Card from './components/card'
 import Avatar from './components/avatar'
 import SocialMediaIcons from './components/socialMediaIcons'
 import WhatIDo from './components/whatIDo'
-import PortfolioCard from './components/portfolioCard'
 import PortfolioText from './components/portfolioText';
 import avatar from './imgs/avatar.jpg';
 import PortfolioProjects from './components/portfolioProjects'
