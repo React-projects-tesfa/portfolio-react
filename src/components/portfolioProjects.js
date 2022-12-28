@@ -15,8 +15,8 @@ export default function portfolioProjects() {
   })
 
   return (
-  <div className="flex items-center justify-center ">
-  <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+  <div className="py-16 flex items-center justify-center">
+  <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-3">
     {markers}
   </div>
 </div>
