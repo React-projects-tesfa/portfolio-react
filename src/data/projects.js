@@ -26,4 +26,28 @@ export const projects = [
         demoLink: "https://nameorigin.netlify.app/", // live demo or video link
         image: dandyReads,
       },
+      {
+        name: "Dandy Reads",
+        description: "DandyReads is a full stack web application where users can search for books on Google Books api, add them to their reading list and calculate the how long a certain book will take them to read.",
+        githubLink: "https://github.com/Django-projects-tesfa/DandyReads", 
+        liveDemoAvailable: false,
+        demoLink: "https://nameorigin.netlify.app/", // live demo or video link
+        image: dandyReads,
+      },
+      {
+        name: "Dandy Reads",
+        description: "DandyReads is a full stack web application where users can search for books on Google Books api, add them to their reading list and calculate the how long a certain book will take them to read.",
+        githubLink: "https://github.com/Django-projects-tesfa/DandyReads", 
+        liveDemoAvailable: false,
+        demoLink: "https://nameorigin.netlify.app/", // live demo or video link
+        image: dandyReads,
+      },
+      {
+        name: "Dandy Reads",
+        description: "DandyReads is a full stack web application where users can search for books on Google Books api, add them to their reading list and calculate the how long a certain book will take them to read.",
+        githubLink: "https://github.com/Django-projects-tesfa/DandyReads", 
+        liveDemoAvailable: false,
+        demoLink: "https://nameorigin.netlify.app/", // live demo or video link
+        image: dandyReads,
+      },
   ]
