@@ -1,18 +1,19 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import Nav from './components/nav'
-import About from './components/about'
-import Card from './components/card'
-import Avatar from './components/avatar'
-import SocialMediaIcons from './components/socialMediaIcons'
-import WhatIDo from './components/whatIDo'
+import Nav from './components/nav';
+import About from './components/about';
+import Card from './components/card';
+import Avatar from './components/avatar';
+import SocialMediaIcons from './components/socialMediaIcons';
+import WhatIDo from './components/whatIDo';
 import PortfolioText from './components/portfolioText';
-import PortfolioProjects from './components/portfolioProjects'
-import hashtag from '../src/imgs/whatIdoIcons/hashtag.png'
-import papers from '../src/imgs/whatIdoIcons/papers.png'
-import star from '../src/imgs/whatIdoIcons/star.png'
-import Aos from 'aos'
-import "aos/dist/aos.css"
+import PortfolioProjects from './components/portfolioProjects';
+import Contact from './components/contact';
+import hashtag from '../src/imgs/whatIdoIcons/hashtag.png';
+import papers from '../src/imgs/whatIdoIcons/papers.png';
+import star from '../src/imgs/whatIdoIcons/star.png';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -51,6 +52,9 @@ function App() {
         <section>
           <PortfolioText />
           <PortfolioProjects/>
+        </section>
+        <section>
+        <Contact />
         </section>
         <footer>
         <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6" />

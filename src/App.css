@@ -65,3 +65,7 @@
   from{border-right-color: #00897B}
   to{border-right-color: transparent;}
 }
+
+.project-card {
+  height: 30em;
+}
