@@ -17,6 +17,7 @@ export default function Contact() {
         .then((result) => {
           //console.log(result.text);
           notify()
+          
         }, (error) => {
             console.log(error.text);
         });
