@@ -2,14 +2,21 @@ import React, { useRef } from 'react';
 import {AiTwotoneMail, AiTwotonePhone, AiOutlineSend } from 'react-icons/ai';
 import emailjs from '@emailjs/browser';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 export default function Contact() {
     const form = useRef();
+
+    const notify = () => toast("Message sent!");
 
     const sendEmail = (e) =>{
         e.preventDefault();
         emailjs.sendForm('service_ill38e6', 'template_fpndip8', form.current, '3wX_G_32yq5McgIlh')
         .then((result) => {
-          console.log(result.text);
+          //console.log(result.text);
+          notify()
         }, (error) => {
             console.log(error.text);
         });
@@ -42,7 +49,9 @@ export default function Contact() {
                 </div>
                 <div className='flex justify-center'>
                     <button type='submit' className="text-teal-300 flex my-3  sm:w-auto px-16 py-2.5" href = "mailto:stesfatsionmulugeta@gmail.com?subject = portfolio message&body = Message"><AiOutlineSend className="text-5xl animate-pulse hover:text-green-400 cursor-pointer"/></button>
+                    <ToastContainer />
                 </div>
+
             </form>
 
         </div>
