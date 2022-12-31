@@ -56,10 +56,10 @@ function App() {
         <section>
         <Contact />
         </section>
-        <footer>
-        <hr className=" border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-6" />
+        <footer className='mt-6'>
         <span className="block text-sm text-white ml-3 sm:text-center ">© 2022 <a href="https://tesfatsionshiferaw.netlify.app/" className="hover:text-wh">Tesfatsion Shiferaw™</a>. All Rights Reserved.
         </span>
+        
         </footer>
       </div>
     </div>
