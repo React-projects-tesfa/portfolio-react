@@ -8,7 +8,7 @@ export default function About() {
         <h3 className=" text-2xl py-2 md:text-3xl dark:text-white line-1 anim-typewriter">
           Full stack web developer
         </h3>
-        <p className=" text-md py-5 leading-8 text-gray-500 md:text-xl max-w-xl mx-auto">
+        <p className=" text-md py-5 leading-8 text-gray-700 md:text-xl max-w-xl mx-auto dark:text-gray-400">
           I am a full-stack web developer with experience in mobile and web
           development. I am passionate about creating user-friendly web and
           mobile applications that are both functional and aesthetically
