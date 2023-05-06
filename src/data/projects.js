@@ -18,8 +18,8 @@ export const projects = [
     description:
       "A fully functional social media app where users can sign in, add friends, post (including images) as well as like and comment accordingly.",
     githubLink: "https://github.com/Django-projects-tesfa/DandyReads",
-    liveDemoAvailable: false,
-    demoLink: "https://nameorigin.netlify.app/", // live demo or video link
+    liveDemoAvailable: true,
+    demoLink: "https://socialmedia-da5e.onrender.com/#/home", // live demo or video link
     image: socialmedia,
   },
   {

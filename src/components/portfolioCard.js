@@ -32,21 +32,32 @@ export default function PortfolioCard({
           href={githubLink}
           className="rounded-full bg-neutral-700 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white"
         >
-          <AiFillGithub />
+          <div className="flex flex-row items-center space-x-1">
+            <div>Github</div>
+            <AiFillGithub />
+          </div>
         </a>
         {liveDemoAvailable ? (
           <a
             href={demoLink}
             className="rounded-full bg-neutral-700 py-2 mt-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white "
           >
-            <AiFillPlayCircle />
+            {/* <AiFillPlayCircle /> */}
+
+            <div className="flex flex-row items-center space-x-1">
+              <div>Live</div>
+              <AiFillPlayCircle />
+            </div>
           </a>
         ) : (
           <a
             href={demoLink}
             className="rounded-full bg-neutral-700 py-2 mt-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-teal-50/60 hover:shadow-white "
           >
-            <AiFillVideoCamera />
+            <div className="flex flex-row items-center space-x-1">
+              <div>Demo</div>
+              <AiFillVideoCamera />
+            </div>
           </a>
         )}
       </div>
