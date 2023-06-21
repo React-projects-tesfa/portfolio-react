@@ -42,7 +42,13 @@ function App() {
               <Card
                 image={hashtag}
                 title={"Front-end"}
-                tools={["HTML/CSS", "Javascript", "React JS", "Django"]}
+                tools={[
+                  "HTML/CSS",
+                  "Javascript",
+                  "React JS",
+                  "Next JS",
+                  "Python/Django",
+                ]}
                 description={
                   "Creating elegant and asthetically pleasing designs."
                 }
@@ -67,7 +73,7 @@ function App() {
               <Card
                 image={star}
                 title={"Android mobile development"}
-                tools={["Kotlin", "Java", "Jetpack Compose", "Xml"]}
+                tools={["React Native", "Kotlin", "Java"]}
                 description={
                   "Building fully functional and user friendly native android apps."
                 }
